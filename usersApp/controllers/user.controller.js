@@ -136,7 +136,6 @@ exports.deleteByEmail = async(req, res) => {
     console.log("Problem in creating user", err);
     res.status(400).json({status: false, data: err});
   }
-}
 
 exports.update = async(req, res) => {
   const username = req.body.username;
